@@ -3,6 +3,13 @@ package enums;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        for (Day enumValue : Day.values()) {
+            enumValue.printName();
+            enumValue.printDayNumber();
+            System.out.println();
+        }
+
+        Month march = Month.MARCH;
+        march.getMonthNumber();
     }
 }
